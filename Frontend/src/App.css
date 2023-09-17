@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  background-color: #9CDD95;
+  color: #3d3d3d;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-title {
+  text-shadow: 2px 2px 2px snow;
+}
+
+.record-container {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.record-div {
+  align-items: center;
+  background-color: #44444438;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  height: 150px;
+  justify-content: center;
+  width: 450px;
+}
+
+#my-file {
+  display: none;
+}
+
+.send-text-response {
+  display: block;
+  height: 50px;
+  text-align: center;
+  width: 150px;
+}
+
+@media screen  and ( max-width : 500px ) {
+  .record-div {
+    width: 100%;
+  }
+}

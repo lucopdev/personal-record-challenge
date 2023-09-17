@@ -1,0 +1,58 @@
+.cards-container {
+  align-items: center;
+  background-color: #44444438;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card-div {
+  align-items: center;
+  background-color: #e7f0cb;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.527);
+  display: flex;
+  flex-flow: column;
+  height: 180px;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+.card-div p {
+  line-height: 1px;
+}
+
+.delete-btn {
+  background-color: #e7f0cb;
+  background-image: url(../../images/icons8-lixeira-64.png);
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: 90%;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+@media screen  and ( max-width : 500px ) {
+  .cards-container {
+    width: 90%;
+  }
+
+  .card-div {
+    font-size: 35%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .delete-btn {
+    margin-top: 15px;
+    height: 15px;
+    width: 15px;
+  }
+}

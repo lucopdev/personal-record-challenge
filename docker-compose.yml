@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: frontend
+    build: ./Frontend
+    ports:
+      - 4000:4000
+    working_dir: /frontend
+    volumes:
+      - ./Frontend/src:/frontend/src
+    healthcheck:
+      test: ["CMD", "lsof", "-t", "-i:4000"]
+      timeout: 10s
+      retries: 5
+
+  backend:
+    container_name: backend
+    build: ./Backend
+    ports:
+      - 3001:3001
+    working_dir: /backend
+    volumes:
+      - ./Backend/src:/backend/src
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      - DB_USER=root
+      - DB_PASS=123456
+      - DB_HOST=database
+      - DB_PORT=3306
+    healthcheck:
+      test: ["CMD", "lsof", "-t", "-i:3001"]
+      timeout: 10s
+      retries: 5
+  database:
+    image: mysql:8.0.29
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: dbRecords
+    ports: 
+      - 3306:3306
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 5

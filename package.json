@@ -1,0 +1,14 @@
+{
+  "name": "sp_challenge_test",
+  "version": "1.0.0",
+  "description": "Personal record application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \" \n\n\n\n----> RUN THE TESTS IN SPECIFIC FOLDERS <----\"",
+    "install:front": "cd ./Frontend && npm install",
+    "install:back": "cd ./Backend && npm install",
+    "dev": "docker-compose up -d --build && npm run install:front && npm run install:back"
+  },
+  "author": "Lucas Rosa",
+  "license": "ISC"
+}

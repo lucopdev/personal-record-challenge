@@ -1,0 +1,58 @@
+.find-record-div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.find-csv-input {
+  border-radius: 5px;
+  height: 30px;
+  margin: 5px;
+  width: 175px;
+}
+
+.send-file-div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.select-file {
+  background-color: snow;
+  border: 2px solid rgb(29, 161, 24);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.562);
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 190px;
+}
+
+.select-file:active {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+}
+
+.no-file {
+  background-color: snow;
+  border: 2px solid rgb(161, 24, 24);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.562);
+  height: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 190px;
+}
+
+.csv-button {
+  background-color: snow;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
+  font-size: 15px;
+  height: 30px;
+  width: 30%;
+}
+
+.csv-button:active {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.301);
+}
