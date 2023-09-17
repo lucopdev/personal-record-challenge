@@ -58,6 +58,14 @@ npm run test:coverage
 ```
 
 
+## The CSV file must follow the example:
+```bash
+name,city,country,favorite_sport
+Lucas Rosa,Pelotas,Brasil,Futebol
+João Pedro,Porto Alegre,Brasil,Basketball
+```
+
+
 ## :handshake: Contact
 
 Lucas Rosa - - lucopdev@gmail.com
