@@ -1,6 +1,6 @@
 <div align='center'>
 
-<img src=https://a.imagem.app/oAq5e9.png alt="logo" width=300 height=120 />
+<!-- <img src=https://a.imagem.app/oAq5e9.png alt="logo" width=300 height=120 /> -->
 
 <h1>Personal Record</h1>
 <p>An application to manipulate a database of personal records by inserting data from a CSV file </p>
