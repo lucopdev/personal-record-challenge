@@ -35,7 +35,7 @@
 Clone the project
 
 ```bash
-git clone https://github.com/lucopdev/sp_challenge_test
+git clone git@github.com:lucopdev/personal-record-challenge.git
 ```
 ##### You DON'T need to install dependencies. I will do it for you ;)
 
